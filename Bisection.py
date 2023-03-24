@@ -17,14 +17,14 @@ def bisection(a, b, n_max):
             return bisection(c , b, n_max-1)
 
 
-n_max = int(input("N máximo de iteraciones: "))
+n_max = int(input("Max number of iterations: "))
 
 a = int(input("a: "))
 b = int(input("b: "))
 
 if(f(a) * f(b) <= 0):
-    print("function root is aprox. in  " + str(bisection(a, b, n_max)))
+    print("function root ≈ " + str(bisection(a, b, n_max)))
 else:
-    print("The interval given to the function wont contain any roots")
+    print("The interval given to the function wont contain any roots, please enter new ones")
     a = int(input("a: "))
     b = int(input("b: "))
