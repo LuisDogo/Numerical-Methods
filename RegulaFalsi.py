@@ -11,5 +11,3 @@ def  regula_falsi():
 n_max = int(input("n_max: "))
 a = int(input("a: "))
 b = int(input("b: "))
-
-
