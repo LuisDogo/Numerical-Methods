@@ -4,7 +4,7 @@ import numpy as np
 
 
 def f(x):
-    fx = pow(x, 3) - x -2
+    fx = pow(x, 3) + x - 3
     return fx
 
 def bisection(a, b, n_max, graph_values):
@@ -15,8 +15,10 @@ def bisection(a, b, n_max, graph_values):
         return c
     else:
         if(f(a) * f(c) < 0):
+            print(str(a) + " " + str(c))
             return bisection(a , c, n_max-1, graph_values)
         else:
+            print(str(c) + " " + str(b))
             return bisection(c , b, n_max-1, graph_values)
 
 
